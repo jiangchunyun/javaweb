@@ -1,0 +1,94 @@
+.top{
+    width: 70em;
+    height: 4em;
+    margin: 0em auto;
+}
+.top span{
+    line-height: 1em;
+    height: 1em;
+    color: #919191;
+    font-size: 0.5em;
+    text-align: center;
+    margin-left: 1.5em;
+}
+.top img{
+    margin-left: 1em;
+}
+.Detail_message{
+    width: 70em;
+    height: 30em;
+    margin: 0.5em auto;
+    background:url("../images/people_img.jpg");
+    background-size: 100%;
+}
+.Detail_message .main_message{
+    width: 12em;
+    height: 15em;
+    background: #5B5B5B;
+    opacity: 0.75;
+    position: absolute;
+    margin-top: 10em;
+    margin-left: 5em;
+}
+.Detail_message .main_message .message_name{
+    font-size: x-large;
+    color: #ffffff;
+    font-family: 楷体;
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.Detail_message .main_message img{
+    position: absolute;
+    margin-left: 1.5em;
+    margin-top: 3.5em;
+    width: 1.5em;
+    height: 1.5em;
+}
+.Detail_message .main_message .message_type{
+    position: absolute;
+    margin-left: 2.6em;
+    margin-top: 3.3em;
+    font-size: large;
+    color: #ffffff;
+    font-family: 楷体;
+}
+
+.Detail_message .main_message .message_live{
+    position: absolute;
+    margin-left: 2em;
+    margin-top: 7.5em;
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: 楷体;
+}
+.Detail_message .main_message .message_attrack{
+    position: absolute;
+    margin-left: 2em;
+    margin-top: 9.5em;
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: 楷体;
+}
+.Detail_message .main_message .message_skill{
+    position: absolute;
+    margin-left: 2em;
+    margin-top: 11.5em;
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: 楷体;
+}
+.Detail_message .main_message .message_leval{
+    position: absolute;
+    margin-left: 2em;
+    margin-top: 13.5em;
+    font-size: 0.8em;
+    color: #ffffff;
+    font-family: 楷体;
+}
+.title{
+    margin: 1em auto;
+    width: 70em;
+    height: 0.1em;
+    background: #63B8FF;
+}

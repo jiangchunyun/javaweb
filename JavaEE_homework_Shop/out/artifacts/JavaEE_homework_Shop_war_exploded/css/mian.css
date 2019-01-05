@@ -1,0 +1,387 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    margin: 0 auto;
+}
+body {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #5B5B5B;
+    overflow-x: hidden;
+}
+@media screen and (max-width:1200px){
+    body{
+        overflow-x:scroll;
+
+    }
+}
+::-webkit-scrollbar {
+    width: 2px;
+}/* 垂直滚动条 */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+}
+a{
+    blr:expression(this.onFocus=this.blur())
+}/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+img{
+    vertical-align:middle;
+}
+.t_bg {
+    width: 1364px;
+    height: 34px;
+    background: #ffffff;
+    min-width: 1200px;
+}
+.top{
+    width: 1364px;
+    height: 34px;
+}
+
+.header {
+    width: 1364px;
+    height: 50px;
+    min-width: 1200px;
+    background:#ffffff;
+    position: relative;
+    z-index: 99;
+
+}
+.head {
+    width: 1364px;
+    height: 51px;
+    margin: 0px auto;
+
+}
+.clearfix {
+    display: block;
+}
+.logo img{
+    display: block;
+    width: 390px;
+    height: 65px;
+}
+.logo {
+    float: left;
+}
+.nav{
+    width:800px;
+    float:right;
+    text-align:right;
+}
+.nav li,.nav li a{
+    display:inline-block;
+}
+.nav li a{
+    height:51px;
+    line-height:51px;
+    font-size:13px;
+    color:#333333;
+    padding:0 20px;
+    text-decoration: none;
+    transition: background 1s ease;
+}
+.nav li:hover a{
+    color:#FFF;
+    height:48px;
+    background:#00A3FF;
+    border-bottom:3px solid #0068A3;
+}
+.banner{
+    width:100%;
+    margin-top:-9px;
+    position:relative;
+    z-index:9;
+}
+#container{
+    overflow: hidden;
+    position: relative;
+    width: 1365px;
+    height: 650px;
+    margin-top:3px;
+}
+#list{
+    width: 5456px;
+    height: 650px;
+    position: absolute;
+    z-index: 1;
+}
+#list img{
+    float: left;
+}
+#buttons{
+    position: relative;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    top:90%;
+}
+#buttons span{
+    cursor: pointer;
+    float:left;
+    width: 12px;
+    height:12px;
+    border-radius:50%;
+    background:rgba(0,0,0,.2);
+    margin-right: 10px;
+}
+#buttons .on{
+    background: #00A3FF;
+}
+#yilaofenlei{
+    position:absolute;
+    top: 71px;
+    display: none;
+}
+
+.main_nav {
+    margin-top: -32px;
+    float: right;
+}
+.cd-user-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 54, 66, 0.7);
+    z-index: 3;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: hidden;
+}
+.cd-user-modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0, visibility 0 0;
+    -moz-transition: opacity 0.3s 0, visibility 0 0;
+    transition: opacity 0.3s 0, visibility 0 0;
+}
+.cd-user-modal-container {
+    position: relative;
+    top:90px;
+    width: 90%;
+    max-width: 600px;
+    background: #FFF;
+    margin: 3em auto 4em;
+    cursor: auto;
+    border-radius: 0.25em;
+}
+.cd-user-modal-container .cd-switcher:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cd-user-modal-container .cd-switcher li {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.cd-user-modal-container .cd-switcher a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #d2d8d8;
+    color: #809191;
+    text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+    .cd-user-modal-container {
+        margin: 4em auto;
+    }
+    .cd-user-modal-container .cd-switcher a {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+.but111{
+    display: inline-block;
+    color: #0070B0;
+    border: none;
+    width: 56px;
+    height: 23px;
+    margin-right: 10px;
+    background: #ffffff;
+}
+.but222{
+    display: inline-block;
+    color: #0070B0;
+    border: none;
+    width: 56px;
+    height: 23px;
+    margin-right: 10px;
+}
+button{
+    cursor: pointer;
+    background-image: url(../images/btn1.jpg);
+}
+.top_m {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 14px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.top_m input[type='text']{
+    width: 120px;
+    height: 18px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.top_m input[type='submit']{
+    float: right;
+    width: 25px;
+    height: 23px;
+    background: url(../img/magnifier_16px_527007_easyicon.net.png) no-repeat center;
+    background-color: #00A3FF;
+}
+.cd-form .fieldset {
+    position: relative;
+    text-align: left;
+}
+.fieldset a{
+    color: #2F889A;
+    text-decoration: none;
+}
+.cd-form .fieldset:first-child {
+    margin-top: 0;
+}
+.cd-form label {
+    font-size: 14px;
+}
+.cd-form label.image-replace {
+    /* replace text with an icon */
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 25%;
+    height: 20px;
+    width: 20px;
+    color: transparent;
+}
+.cd-form label.cd-username {
+    background-image: url("../img/cd-icon-username.svg");
+}
+.cd-form label.cd-email {
+    background-image: url("../img/cd-icon-email.svg");
+}
+.cd-form label.cd-password {
+    background-image: url("../img/cd-icon-password.svg");
+}
+.cd-form input {
+
+    border-radius: 0.25em;
+}
+.cd-form input.full-width {
+    width: 80%;
+}
+.cd-form input.full-width2 {
+    width: 94%;
+    font-family: "微软雅黑";
+}
+.cd-form input.has-padding {
+    padding: 12px 20px 12px 50px;
+}
+.cd-form input.has-border {
+    border: 1px solid #d2d8d8;
+}
+.cd-form input.has-border:focus {
+    border-color: #343642;
+    box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+}
+.cd-form input.has-error {
+    border: 1px solid #d76666;
+}
+.cd-form input[type=password] {
+    /* space left for the HIDE button */
+    padding-right: 65px;
+}
+.cd-form input[type=text] {
+    /* space left for the HIDE button */
+    padding-right: 65px;
+}
+.cd-form input[type=submit] {
+    padding: 16px 0;
+    cursor: pointer;
+    background: #2f889a;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+}
+.cd-form input[type=button] {
+    padding: 16px 0;
+    cursor: pointer;
+    background: #2f889a;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+}
+@media only screen and (min-width: 600px) {
+    .cd-form {
+        padding: 2em;
+    }
+    .cd-form .fieldset {
+        margin: 2em 0;
+    }
+    .cd-form input[type=submit] {
+        padding: 16px 0;
+    }
+    .cd-form input[type=button] {
+        padding: 16px 0;
+    }
+}
+.cd-close-form {
+    /* form X button on top right */
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: -40px;
+    background: url("../img/cd-icon-close.svg") no-repeat center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#cd-login, #cd-signup, #cd-reset-password {
+    display: none;
+}
+#cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+#button999{
+    display: none;
+}
+.top{
+    color: black;
+}
+
+.shopping_cart{
+    display: inline-block;
+    color: #0070B0;
+    border: none;
+    width: 56px;
+    height: 48px;
+    margin-right: 10px;
+    background: #ffffff;
+}
+.title{
+    margin: 0em auto;
+    width: 1365px;
+    height: 0.1em;
+    background: #63B8FF;
+}
+.login_class{
+    display: inline;
+    margin-top: 25px;
+    position: relative;
+}

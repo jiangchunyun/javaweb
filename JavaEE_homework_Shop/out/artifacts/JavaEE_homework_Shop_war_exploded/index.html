@@ -1,0 +1,131 @@
+
+<html>
+<head>
+    <title>王者荣耀购买英雄首页</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/mian.css?ver=1"/>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js?ver=1"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="js/index_setview.js?ver=1" type="text/javascript"></script>
+    <script src="js/jquery-1.10.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8"></script>
+    <meta name="viewport" ,content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+</head>
+<body>
+<div class="t_bg">
+    <div class="top">
+        <div class="top_m">
+            <span style="width: 100px; height: 50px; color: #838B8B;font-size: 0.2em;">王者荣耀 英雄专业售卖</span>
+        </div>
+        <div class="demo">
+            <nav class=" main_nav" style="color: #ffffff">
+            </nav>
+        </div>
+    </div>
+    <div class="cd-user-modal">
+        <div class="cd-user-modal-container">
+            <ul class="cd-switcher">
+                <li><a href="#0" id="sub_1" onclick="changeColor('1')" style="background-color: white;">用户登录</a></li>
+                <li><a href="#0" id="sub_2" onclick="changeColor('2')">注册新用户</a></li>
+            </ul>
+            <div id="cd-login"> <!-- 登录表单 -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signin-username">用户名</label>
+                        <input class="full-width has-padding has-border" id="signin-username" type="text" name="name"
+                               placeholder="输入用户名" onblur="user()">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">密码</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="password"
+                               name="password" placeholder="输入密码" onblur="password()">
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">记住登录状态</label>
+                    </p>
+                    <p class="fieldset">
+                        <input class="full-width2" type="button" value="登 录" onclick="Login()">
+                    </p>
+                </form>
+            </div>
+
+            <div id="cd-signup"> <!-- 注册表单 -->
+                <form class="cd-form" id="form11111">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">用户名</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" name="name"
+                               placeholder="输入用户名">
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">密码</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="password"
+                               name="password1" placeholder="输入密码">
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">密码</label>
+                        <input class="full-width has-padding has-border" id="signup-password2" type="password"
+                               name="password2" placeholder="请确定密码" onblur="password_same()">
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">我已阅读并同意 <a href="#0">用户协议</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width2" type="button" value="注 册 新 用 户" onclick="Register()">
+                    </p>
+                </form>
+            </div>
+            <a href="#0" class="cd-close-form">关闭</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="header">
+    <div class="head clearfix">
+        <div class="title"></div>
+        <div class="logo"></div>
+        <div class="login_class">
+            <button class="shopping_cart" onclick="show_shopping_cart()"><b>购物车</b></button>
+            <button class="but111" id="button666"><b>用户登录</b></button>
+        </div>
+        <ul class="nav clearfix">
+            <li class="soldier_people" onclick="lister_soldier()"><a>战士英雄</a></li>
+            <li><a onclick="show_stabber()">刺客英雄</a></li>
+            <li><a onclick="show_shooter()">射手英雄</a></li>
+            <li><a onclick="show_assistant()">辅助英雄</a>
+            </li>
+            <li><a onclick="show_magic()">法师英雄</a></li>
+            <li onclick="lister_own_people()"><a>已拥有英雄</a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="title"></div>
+<div id="container">
+    <div id="list" style="left: -1364px;">
+        <img src="images/people_img.jpg" alt="" style="height: 600px; width: 1364px;"/>
+        <img src="images/people_img2.jpg" alt="" style="height: 600px; width: 1364px;"/>
+        <img src="images/people_img3.jpg" alt="" style="height:600px; width: 1364px;"/>
+        <img src="images/people_img.jpg" alt="" style="height: 600px; width: 1364px;"/>
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>
+

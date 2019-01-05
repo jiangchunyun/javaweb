@@ -1,0 +1,90 @@
+.Shop_top{
+    width:76em ;
+    height:5em ;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+.name{
+    width: 10em;
+    height: 5em;
+    margin-left: 2em;
+}
+.name span{
+    color: #919191;
+    font-size: 0.2em;
+    margin-left: 0.6em;
+}
+.title{
+    margin: 1em auto;
+    width: 76em;
+    height: 0.1em;
+    background: #63B8FF;
+}
+.Show_soldier{
+    width: 80em;
+    height: 35em;
+    margin: 0 auto;
+    margin-top: 0.5em;
+}
+.item{
+    width: 9em;
+    height: 14em;
+    margin-top: 1em;
+    margin-left: 2em;
+    border: 1px solid #809191;
+    float: left;
+}
+.item .item_button{
+    width: 11em;
+    height: 1.75em;
+    margin-left: 0.25em;
+    background: #969696;
+    color: #ffffff;
+    opacity: 0.5;
+    border-style:none ;
+}
+.item .item_button:hover{
+    background: #5B5B5B;
+}
+.item .name{
+    width: 5em;
+    height: 1.5em;
+    color: #ffffff;
+    font-size: 0.5em;
+    position: absolute;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 17em;
+    margin-left: 5em;
+}
+.item .shopping_cart{
+    border-style:none ;
+    width: 7em;
+    height: 1.7em;
+    color: #ffffff;
+    font-size: 0.5em;
+    position: absolute;
+    background: #809191;
+    text-align: center;
+    line-height: 1.5em;
+    opacity: 0.7;
+    margin-top: 1em;
+    margin-left: 7em;
+    border-radius: 0.2em;
+}
+.item .shopping_cart:hover{
+    background: #d76666;
+}
+.item .price{
+    width: 14em;
+    height: 1.5em;
+    color: #ffffff;
+    font-size: 0.5em;
+    position: absolute;
+    text-align: center;
+    line-height: 1.5em;
+    background: #809191;
+    opacity: 0.7;
+    margin-top: 18.7em;
+    margin-left: 0.45em;
+}

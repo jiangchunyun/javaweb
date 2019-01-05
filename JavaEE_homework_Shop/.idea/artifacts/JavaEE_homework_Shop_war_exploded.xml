@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaEE_homework_Shop:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEE_homework_Shop_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaEE_homework_Shop/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaEE_homework_Shop" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="F:/java_jdbc_mysql/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar" />
+          <element id="file-copy" path="F:/java_jar包/gson.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
